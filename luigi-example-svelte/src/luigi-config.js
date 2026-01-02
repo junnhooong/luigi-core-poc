@@ -22,6 +22,12 @@ Luigi.setConfig({
             viewUrl: baseUrl + '/home/sample2'
           },
           {
+            pathSegment: 'student',
+            label: 'student',
+            icon: 'nutrition-activity',
+            viewUrl: 'http://localhost:3001'
+          },
+          {
             category: { label: 'Links', icon: 'cloud' },
             label: 'Luigi Project',
             externalLink: {

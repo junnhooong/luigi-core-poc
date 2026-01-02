@@ -2,49 +2,55 @@ Luigi.setConfig({
   navigation: {
     nodes: () => [
       {
-        pathSegment: 'home',
-        label: 'Home',
-        icon: 'home',
-        viewUrl: '/sampleapp.html/#/microfrontend/home',
+        pathSegment: "home",
+        label: "Home",
+        icon: "home",
+        viewUrl: "/sampleapp.html/#/microfrontend/home",
         loadingIndicator: {
-          enabled: false
+          enabled: false,
         },
         children: [
           {
-            pathSegment: 'sample1',
-            label: 'First',
-            icon: 'nutrition-activity',
-            viewUrl: '/sampleapp.html/#/microfrontend/sample1'
+            pathSegment: "sample1",
+            label: "First",
+            // icon: 'nutrition-activity',
+            viewUrl: "/sampleapp.html/#/microfrontend/sample1",
           },
           {
-            pathSegment: 'sample2',
-            label: 'Second',
-            icon: 'paper-plane',
-            viewUrl: '/sampleapp.html/#/microfrontend/sample2'
+            pathSegment: "sample2",
+            label: "Second",
+            icon: "paper-plane",
+            viewUrl: "/sampleapp.html/#/microfrontend/sample2",
           },
           {
-            category: { label: 'Links', icon: 'cloud' },
-            label: 'Luigi Project',
+            pathSegment: "student",
+            label: "student",
+            icon: "nutrition-activity",
+            viewUrl: "http://localhost:3001",
+          },
+          {
+            category: { label: "Links", icon: "cloud" },
+            label: "Luigi Project",
             externalLink: {
-              url: 'https://luigi-project.io/'
-            }
+              url: "https://luigi-project.io/",
+            },
           },
           {
-            category: 'Links',
-            label: 'React.js',
+            category: "Links",
+            label: "React.js",
             externalLink: {
-              url: 'https://reactjs.org/'
-            }
-          }
-        ]
-      }
-    ]
+              url: "https://reactjs.org/",
+            },
+          },
+        ],
+      },
+    ],
   },
   settings: {
     header: {
-      title: 'Luigi React App',
-      logo: '/logo.png'
+      title: "Luigi React App",
+      logo: "/logo.png",
     },
-    responsiveNavigation: 'simpleMobileOnly'
-  }
+    responsiveNavigation: "simpleMobileOnly",
+  },
 });
